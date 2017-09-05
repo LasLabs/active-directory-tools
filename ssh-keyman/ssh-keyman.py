@@ -50,6 +50,7 @@ if CREATE_CONFIG:
         CONFIG.set('ADDC','URI', server)
         CONFIG.set('ADDC','BASE_DN', base_dn)
         CONFIG.set('ADDC','SSH_KEY_ATTR', ssh_key_attr)
+        CONFIG.set('ADDC','LDAP_SERVER', 'ldap://'+server+':389')
         CONFIG.write(fh)
 
 SSH_KEY_ATTR = CONFIG.get('ADDC','SSH_KEY_ATTR')
